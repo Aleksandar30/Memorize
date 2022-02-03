@@ -16,7 +16,7 @@ func makeCardContent(index: Int) -> String {
 }
 */
 
-class EmojiMemoryGame {
+class EmojiMemoryGame: ObservableObject {
     
     static let emojis = ["🚂","🚀","🚁","🛺","🚄","🛶","⛴","🛸","🚛","🛴","🏎","🚑","🚔"]
     
@@ -26,7 +26,7 @@ class EmojiMemoryGame {
         }
     }
     
-    private var model: MemoryGame<String> = createMemoryGame()
+    @Published private var model: MemoryGame<String> = createMemoryGame()
     
     var cards: Array<MemoryGame<String>.Card> {
         model.cards

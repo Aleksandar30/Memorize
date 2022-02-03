@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let viewModel: EmojiMemoryGame     //Obicno se nece zvati ovako
+    @ObservedObject var viewModel: EmojiMemoryGame     //Obicno se nece zvati ovako
     
     var body: some View {
             ScrollView {
@@ -41,12 +41,7 @@ struct CardView: View {
             } else {
                 shape.fill()
             }
-            
         }//: ZSTACK
-        //.onTapGesture {
-            //card.isFaceUp = !card.isFaceUp
-        //}
-        
     }
 }
 
