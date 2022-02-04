@@ -15,7 +15,7 @@ func makeCardContent(index: Int) -> String {
     return "😀"
 }
 */
-
+// VIEW MODEL JE OBESRVABLE
 class EmojiMemoryGame: ObservableObject {
     
     static let emojis = ["🚂","🚀","🚁","🛺","🚄","🛶","⛴","🛸","🚛","🛴","🏎","🚑","🚔"]
